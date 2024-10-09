@@ -82,7 +82,7 @@ async def show_usd_rate(message: Message, state: FSMContext, name: str):
         if usd_to_rub:
             # Update Redis cache
             if redis_cache is not None:
-                redis_cache.set("usd_to_rub", usd_to_rub, ex=60)
+                redis_cache.set("usd_to_rub", usd_to_rub, ex=60)  # 1 min
             await message.answer(
                 success_message_pattern.format(name=name, usd_to_rub=usd_to_rub)
             )
