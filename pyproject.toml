@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "telegram-usd-rate-bot"
+version = "0.1.0"
+description = ""
+authors = ["sergey240702 <sergey240702@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+aiogram = "^3.13.1"
+aiohttp = "^3.10.9"
+redis = "^5.1.1"
+setuptools = "^75.1.0"
+pydantic-settings = "^2.5.2"
+icecream = "^2.1.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
